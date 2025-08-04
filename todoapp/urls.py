@@ -4,4 +4,5 @@ urlpatterns = [
     path('list/', views.TodoList.as_view(), name='todo_list'),
     path('<int:pk>/', views.TodoDetail.as_view(), name='todo_detail'),
     path('register/', views.RegisterView.as_view(), name='register'),
+    path('protected/', views.ProtectedView.as_view(), name='protected'),
 ]
